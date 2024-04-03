@@ -1,0 +1,338 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url('195A4806.JPG'); /* Cambia 'background-image.jpg' por la ruta de tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Cambia el valor de opacidad según lo desees */
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 6em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: Great Vibes;
+}
+
+.hero-content h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.wedding {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #89cff0;
+}
+
+.wedding-content h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.wedding-content img {
+  max-width: 40%;
+  height: auto;
+}
+
+.countdown {
+  text-align: center;
+  padding: 50px 0;
+  background-image: url('195A4780.jpg');
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.countdown-content h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.information {
+  background-color: #add8e6; /* Baby blue */
+  padding: 50px 0;
+}
+
+.information-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.column {
+  text-align: center;
+}
+
+.column img {
+  max-width: 100%;
+  height: auto;
+}
+
+.dress-code {
+  background-color: yellow; /* Amarillo */
+  text-align: center;
+  padding: 50px 0;
+}
+
+.dress-code-content h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.dress-code-content p {
+  font-size: 1.2em;
+}
+
+.dress-code-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.our-moments {
+  background-color: #c1ecc1; /* Fondo verde claro */
+  text-align: center;
+  padding: 50px 0;
+}
+
+.our-moments-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.elegant-title {
+  font-size: 3em;
+  color: #555;
+  text-shadow: 2px 2px 2px #ccc;
+  font-weight: bold;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.banner img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 10px;
+}
+
+.our-parents {
+  background-color: #d8c3e3; /* Fondo lila */
+  text-align: center;
+  padding: 50px 0;
+}
+
+.our-parents-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.our-parents-content .column {
+  flex-basis: 45%;
+}
+
+.our-parents-content .banner {
+  flex-basis: 90%;
+}
+
+.our-parents-content h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.our-parents-content p {
+  font-size: 1.2em;
+}
+
+.rsvp {
+  background-color: #f7d9e3; /* Fondo rosa claro */
+  text-align: center;
+  padding: 50px 0;
+}
+
+.rsvp-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.rsvp-content h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.rsvp-content form {
+  margin-top: 20px;
+}
+
+.rsvp-content form label,
+.rsvp-content form select,
+.rsvp-content form input[type="text"],
+.rsvp-content form input[type="email"],
+.rsvp-content form input[type="submit"] {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.rsvp-content form input[type="text"],
+.rsvp-content form input[type="email"],
+.rsvp-content form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.rsvp-content form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.rsvp-content form input[type="submit"] {
+  background-color: #ff69b4; /* Rosa */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rsvp-content form input[type="submit"]:hover {
+  background-color: #d04176; /* Rosa más oscuro */
+}
+
+/* Efecto de entrada para todos los títulos 
+h1, h2, h3, h4, h5, h6 {
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}*/
+
+/* Efecto de entrada para todos los títulos */
+h1, h2, h3, h4, h5, h6 {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Mostrar los títulos cuando están en el área visible */
+/* Puedes ajustar el valor de 'viewport' según tus necesidades */
+@media (min-width: 768px) {
+  h1, h2, h3, h4, h5, h6 {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+p{
+  font-size: 1.2em;
+}
+
+/* Estilos para el mensaje de confirmación */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(100, 100, 100, 0.8);
+}
+
+.modal-content {
+  background-color: #000000;
+  opacity: 85%;
+  margin: 20% auto;
+  padding: 35px;
+  border: none;
+  width: 15%;
+  text-align: center;
+  border-radius: 3%;
+  color: #ffffff;
+  font-size: larger;
+}
+
+/* Estilos para el reproductor de música */
+.music-player {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.music-player #play-pause-btn {
+  background-color: #800080; /* Color morado */
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.music-player #play-pause-btn:hover {
+  background-color: #4b004b; /* Color morado más oscuro */
+}
+
+/* Estilos para los elementos de la cuenta regresiva */
+.countdown-item {
+  background-color: rgba(255, 0, 0, 0.6); /* Rojo con opacidad */
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  color: white;
+  display: inline-block;
+}
+
+.countdown-number {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.countdown-label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.button {
+  background-color: #89cff0; /* Color de fondo */
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno */
+  border: none; /* Eliminar borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+  width: 40%;
+}
+
+img {
+  border-radius: 2%;
+}
