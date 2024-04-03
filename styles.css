@@ -33,7 +33,7 @@ body, html {
   font-size: 6em;
   margin-bottom: 20px;
   font-weight: bold;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Great Vibes';
 }
 
 .hero-content h2 {
@@ -335,4 +335,9 @@ p{
 
 img {
   border-radius: 2%;
+}
+
+@font-face {
+  font-family: "Great Vibes";
+  src: url(https://fonts.google.com/share?selection.family=Great+Vibes);
 }
